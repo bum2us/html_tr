@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale =1.0">
+	<title>beomsu</title>
+	
+	<style type="text/css">
+		table, th, td {
+			border: 1px solid #D8D8D8;
+			border-collapse: collapse;
+			font-size: 10pt;
+		}
+		
+		th, td {
+			padding: 10px;
+		}
+	</style>
+</head>
+	<body>
+		<form method="get" id="form" action="./1_result.html">
+			<h4><b>기본정보</b></h4>
+			<table>
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>✔ 이름</td>
+					<td><input type="text" id="name"></td>				
+				</tr>
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>✔ 아이디</td>
+					<td>
+						<input type="text" id="id">&nbsp;
+						<input type="button" value="✔ 아이디중복확인"><br>
+						<span style="color:brown;font-size:8pt">6~16자까지 영문자(소문자),숫자 사용 가능합니다.</span>
+					</td>
+				</tr>	
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>✔ 비밀번호</td>
+					<td>
+						<input type="password" id="password"><br>
+						<span style="color:brown;font-size:8pt">6~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.<br>
+						3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.</span>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>✔ 비밀번호 확인</td>
+					<td><input type="password" id="chkpassword"></td>
+				</tr>
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>✔ 이메일</td>
+					<td>
+						<input type="text" id="email1">
+						<span>@</span>
+						<input type="text" id="email2">
+						<select id="selemail">
+							<option value="0">메일주소선택
+							<option value="1">naver.com
+							<option value="2">gmail.com
+							<option value="3">daum.net
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="3" align="center" style=background-color:#848484;color:#FFFFFF>✔ 연락처</td>
+					<td>
+						<span style="font-size:10pt">휴대전화</span> 
+						<select id="mobile1">
+							<option value="1">010
+							<option value="2">016
+							<option value="3">017
+						</select>
+						-&nbsp;<input type="text" id="mobile2">
+						-&nbsp;<input type="text" id="mobile3">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span style="font-size:10pt">일반전화</span>
+						<select id="homeTel1">
+							<option value="1">02
+							<option value="2">032
+							<option value="3">031
+						</select>
+						<span style="font-size:10pt">-&nbsp;<input type="text" id="homeTel2">
+						<span style="font-size:10pt">-&nbsp;<input type="text" id="homeTel3">
+					</td>
+				</tr>
+				<tr>
+					<td style=color:brown;font-size:8pt>연락처는 둘 중 하나만 입력해도 됩니다.</td>
+				</tr>
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>✔ 우편번호</td>
+					<td>
+						<input type="text" id="zipcode">
+						<input type="button" value="주소검색">
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" align="center" style=background-color:#848484;color:#FFFFFF>✔ 주소</td>		
+					<td><input type="text" id="addr1" style=width:98%></td>			
+				</tr>
+				<tr>					
+					<td><input type="text" id="addr2" style=width:20%></td>
+				</tr>
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>정보수신 여부</td>
+					<td>서비스 및 이벤트 소식을
+						<input type="checkbox" id="sendEmail">Email로 수신하겠습니다.
+						<input type="checkbox" id="sendMobile">SMS로 수신하겠습니다.
+					</td>
+				</tr>
+			</table>	
+		
+			<h4><b>작가정보</b></h4>
+			<table>
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>프로필이미지</td>
+					<td>
+						<input type="button" value="파일 선택">
+						선택된 파일 없음
+					</td>
+				</tr>				
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>✔ 필명</td>
+					<td>
+						<input type="text" id="nickname"><br>
+						<span style="color:brown;font-size:8pt">필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</span>	
+					</td>
+				</tr>			
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>대표작</td>
+					<td><input type="text" id="masterpiece" style=width:98%></td>
+				</tr>				
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>수상내역</td>
+					<td>
+						<textarea rows="10" cols="50" id="content"></textarea><br>
+						<span style="color:brown;font-size:8pt">여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</span>
+					</td>
+				</tr>				
+				<tr>
+					<td align="center" style=background-color:#848484;color:#FFFFFF>주요작품</td>
+					<td>
+						<input type=>
+					</td>
+				</tr>				
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>				
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>				
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>				
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>	
+	</body>
+</html>

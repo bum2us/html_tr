@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale =1.0">
+	<title>beomsu</title>
+</head>
+	<body>
+<!-- 		<form method="post" action="./1_result.html"> -->
+		<form method="get" action="./1_result.html" id="form">
+		
+			<input type="text" name="id" placeholder="아이디" id="id" disabled><br>
+			<input type="password" name="password" placeholder="비밀번호" id="password" readonly><br>
+			
+			<select name="gender" id="gender">
+				<option value="">선택
+				<option value="1">남자
+				<option value="2">여자
+			</select><br>
+			
+			<select name="telecom">
+				<option value="">통신사
+				<option value="1">SKT
+				<option value="2">KT
+				<option value="3">LG
+			</select><br>
+			
+			<h5>취미</h5>
+			<input type="checkbox" name="hobby1">축구
+			<input type="checkbox" name="hobby2">농구
+			<input type="checkbox" name="hobby3">배구
+			<input type="checkbox" name="hobby4">탁구
+			<input type="checkbox" name="hobby5">야구
+			<input type="checkbox" name="hobby6">피구
+			<br>
+			
+			<h5>가입경로</h5>
+			<input type="radio" name="root">TV
+			<input type="radio" name="root">지인추천
+			<input type="radio" name="root">SNS
+			<input type="radio" name="root">오프라인
+			<input type="radio" name="root">기타
+			<br>
+			
+			<textarea rows="10" cols="50" name="contene" placeholder="간단한 자기소개 입력..."></textarea><br>
+			<input type="hidden" name="" value=""><br>
+			
+<!-- 			<input type="submit" value="승인"> -->
+
+			<input type="button" value="제출" onclick="here();">		
+		
+		
+		</form>	
+		
+			<script tpye="text/javascript">
+			function here(){
+				alert("제출합니다");
+				document.getElementById("form").submit();
+			}
+			</script>	
+			
+	</body>
+</html>
