@@ -1,0 +1,32 @@
+div {
+	width: 900px;
+	margin: 0px 0px 0px 450px;
+}
+		
+table {
+	width: 900px;
+	border-collapse: collapse;
+	border-top: 3px, solid, #585858;
+}
+		
+th {
+	color: #FFFFFF;	
+	text-align: center;
+	background: #585858;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px, solid, #000000;
+	text-align: center;	
+}
+.td-email {
+	text-align: left;
+}
+.mybutton {
+	background-color: #585858;
+	color: #FFFFFF; 
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+}

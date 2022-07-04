@@ -4,7 +4,85 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale =1.0">
 	<title>beomsu</title>
+	
+	<link rel="stylesheet" href="./css/style_list.css">
+	
 </head>
 	<body>
-	</body>
+		<div>
+			<h2 style= "text-align: center; color: #585858">EZEN 입사지원</h2>
+			<input type="text" id="list-search" placeholder="검색어 입력">
+			<button type="button" class="mybutton">검색</button>
+			<hr>
+			<table align = "center">
+				<tr>
+					<th>No.</th>					
+					<th>이름</th>
+					<th>나이</th>
+					<th>성별</th>
+					<th>지역</th>
+					<th>연락처</th>
+					<th>email</th> 					
+ 					<th>합격여부</th>											
+				</tr>
+				<tr>
+					<td>1</td>
+					<td><a href="01_result.html">신범수</a></td>
+					<td>28</td>
+					<td>남</td>					
+					<td>경기</td>
+					<td>010-6864-1896</td>
+					<td class="td-email">qka342@gmail.com</td>
+					<td>합격</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><a href="01_result.html">홍길동</a></td>
+					<td>24</td>
+					<td>남</td>					
+					<td>서울</td>
+					<td>010-1234-4321</td>
+					<td class="td-email">ikilludong@arirang.com</td>
+					<td>합격</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td><a href="01_result.html">장원영</a></td>
+					<td>18</td>
+					<td>여</td>					
+					<td>서울</td>
+					<td>010-8282-8282</td>
+					<td class="td-email">wonyoung@naver.com</td>
+					<td>합격</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><a href="01_result.html">황로다주</a></td>
+					<td>57</td>
+					<td>남</td>					
+					<td>강원</td>
+					<td>010-8253-8253</td>
+					<td class="td-email">1ronman@gmail.com</td>
+					<td>불합격</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td><a href="01_result.html">박톰크루즈</a></td>
+					<td>60</td>
+					<td>남</td>					
+					<td>대구</td>
+					<td>010-1253-1253</td>
+					<td class="td-email">t0pgun@gmail.com</td>
+					<td>불합격</td>
+				</tr>
+			</table>
+			<hr>					
+			<button type="button" class="mybutton" style="float: right;" onclick="CreateNew();">신규 등록</button>
+		</div>
+	</body>	
+	<script type="text/javascript">
+	function CreateNew(){		
+		location.href="recruitRegForm.html";
+	}		
+	</script>	
 </html>

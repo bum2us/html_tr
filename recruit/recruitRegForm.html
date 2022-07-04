@@ -1,10 +1,152 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale =1.0">
-	<title>beomsu</title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale =1.0">
+		<title>입사지원서</title>
+		
+		<link rel="stylesheet" href="./css/style_reg.css">
+		
+	</head>
 	<body>
+		<div>
+			<h2 style= "text-align: center; color: #585858">신규 입사지원서 작성</h2>
+			<form action="" id="form">			
+				<table>				
+					<tr>
+						<th>지원분야</th>
+						<td><input type="text" id="jobType"></td>
+						<th>경력구분</th>
+						<td>
+							<select id="selcareer">
+								<option value="0">경력
+								<option value="1">신입
+							</select>
+						</td>
+						<th>희망연봉</th>
+						<td><input type="text" id="money"></td>
+					</tr>
+				</table>	
+				<br>
+				<br>	
+				<h4>□ 기본정보</h4>
+				<table>
+					<tr>
+						<td rowspan="6" style=color:red >
+							<i>정장 차림의 증명사진<br>
+							넣으시면<br><u>
+							됩니다 단축키</u><br>
+							ctrl + N + I</i><br>
+							<input type="image" id="picture" value="이미지첨부">
+						</td>
+						<th>성명</th>
+						<td><input type="text" id="name_kr"></td>
+						<th>한문</th>
+						<td><input type="text" id="name_ch"></td>		
+					</tr>		
+					<tr>
+						<th>영문</th>
+						<td><input type="text" id="name_en"></td>
+						<th>생년월일</th>
+						<td><input type="date" id="birthday"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td><input type="text" id="tel1"></td>
+						<th>비상연락망</th>
+						<td><input type="text" id="tel2"></td>
+					</tr>
+					<tr>
+						<th>전자우편</th>
+						<td><input type="text" id="email"></td>
+						<th>나이</th>
+						<td><input type="number" id="age"></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td colspan ="3" align="center"><input type="text" id="address"></td>
+					</tr>
+					<tr>
+						<th>취미생활</th>
+						<td colspan ="3"><input type="text" id="hoby"></td>
+					</tr>		
+				</table>
+				<br>
+				<h4>□ 학력사항 (최신이력이 가장 위로)</h4>	
+				<table>
+					<tr >
+						<th>기간</th>
+						<th>출신학교</th>
+						<th>구분</th>
+						<th>학과</th>
+						<th>소재지</th>
+					</tr>
+					<tr>
+						<td>
+							<input type="date" id="school_start_date" class="input-date">-
+							<input type="date" id="school_end_date"  class="input-date">
+						</td>
+						<td><input type="text" id="school_name"></td>
+						<td>
+							<select id="schooltype">
+								<option value="0">재학
+								<option value="1">휴학
+								<option value="2">중퇴
+								<option value="3">졸업
+							</select>
+						</td>
+						<td><input type="text" id="major"></td>
+						<td><input type="text" id="location"></td>
+					</tr>
+				</table>
+				<br>
+				<h4>□ 교육연수</h4>		
+				<table>						
+					<tr >
+						<th>연수기간</th>
+						<th>연수기관</th>
+						<th>연수과정 및 내용</th>
+					</tr>
+					<tr>
+						<td>
+							<input type="date" id="edu_start_date">-
+							<input type="date" id="edu_end_date">
+						</td>
+						<td><input type="text" id="edu_name"></td>
+						<td><input type="text" id="edu_memo"></td>
+					</tr>
+				</table>
+				<h4>□ 자격사항</h4>
+				<table>
+					<tr >
+						<th>취득일</th>
+						<th>종류 및 등급</th>
+						<th>발행처</th>
+						<th>보유기술 및 수준</th>
+					</tr>
+					<tr>
+						<td><input type="date" id="certi_date"></td>
+						<td><input type="text" id="certi_name"</td>
+						<td><input type="text" id="certi_madeby"</td>
+						<td><input type="text" id="certi_memo"</td>
+					</tr>
+				</table>
+				<h4>□ 경력사항(4대 보험 가입 경력)</h4>
+				<table>	
+					<tr>
+						<th>활동기간</th>
+						<th>기관</th>
+						<th>담당업무</th>
+						<th>경험 및 습득역량</th>
+					</tr>
+					<tr>
+						<td><input type="date" id="company_start_date">-<input type="date" id="company_end_date"></td>
+						<td><input type="text" id="company_name"</td>
+						<td><input type="text" id="company_major"</td>
+						<td><input type="text" id="company_memo"</td>						
+					</tr>
+				</table>
+			</form>
+		</div>
 	</body>
 </html>
