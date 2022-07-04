@@ -26,13 +26,11 @@
 						<th>희망연봉</th>
 						<td><input type="text" id="money"></td>
 					</tr>
-				</table>	
-				<br>
-				<br>	
+				</table>		
 				<h4>□ 기본정보</h4>
 				<table>
 					<tr>
-						<td rowspan="6" style=color:red >
+						<td rowspan="6" style=color:red>
 							<i>정장 차림의 증명사진<br>
 							넣으시면<br><u>
 							됩니다 단축키</u><br>
@@ -71,19 +69,18 @@
 						<td colspan ="3"><input type="text" id="hoby"></td>
 					</tr>		
 				</table>
-				<br>
 				<h4>□ 학력사항 (최신이력이 가장 위로)</h4>	
 				<table>
 					<tr >
 						<th>기간</th>
-						<th>출신학교</th>
-						<th>구분</th>
-						<th>학과</th>
-						<th>소재지</th>
+						<th style="width:50px;">출신학교</th>
+						<th style="width:30px;">구분</th>
+						<th style="width:60px;">학과</th>
+						<th style="width:50px;">소재지</th>
 					</tr>
 					<tr>
 						<td>
-							<input type="date" id="school_start_date" class="input-date">-
+							<input type="date" id="school_start_date" class="input-date">&nbsp;-
 							<input type="date" id="school_end_date"  class="input-date">
 						</td>
 						<td><input type="text" id="school_name"></td>
@@ -99,7 +96,6 @@
 						<td><input type="text" id="location"></td>
 					</tr>
 				</table>
-				<br>
 				<h4>□ 교육연수</h4>		
 				<table>						
 					<tr >
@@ -109,8 +105,8 @@
 					</tr>
 					<tr>
 						<td>
-							<input type="date" id="edu_start_date">-
-							<input type="date" id="edu_end_date">
+							<input type="date" id="edu_start_date" class="input-date">&nbsp;-
+							<input type="date" id="edu_end_date" class="input-date">
 						</td>
 						<td><input type="text" id="edu_name"></td>
 						<td><input type="text" id="edu_memo"></td>
@@ -135,18 +131,27 @@
 				<table>	
 					<tr>
 						<th>활동기간</th>
-						<th>기관</th>
-						<th>담당업무</th>
-						<th>경험 및 습득역량</th>
+						<th style="width:50px;">기관</th>
+						<th style="width:50px;">담당업무</th>
+						<th style="width:50px;">경험 및 습득역량</th>
 					</tr>
 					<tr>
-						<td><input type="date" id="company_start_date">-<input type="date" id="company_end_date"></td>
+						<td>
+							<input type="date" id="company_start_date" class="input-date">&nbsp;-
+							<input type="date" id="company_end_date" class="input-date">
+						</td>
 						<td><input type="text" id="company_name"</td>
 						<td><input type="text" id="company_major"</td>
 						<td><input type="text" id="company_memo"</td>						
 					</tr>
 				</table>
+				<button type="button" class="mybutton" style="float: right;" onclick="Save();">저장하기</button>
 			</form>
 		</div>
 	</body>
+	<script type="text/javascript">
+	function Save(){		
+		location.href="recruitList.html";
+	}		
+	</script>	
 </html>

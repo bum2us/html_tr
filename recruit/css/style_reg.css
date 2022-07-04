@@ -32,3 +32,13 @@ input {
 .input-date {
 	width: 45%;
 }
+
+.mybutton {	
+	background-color: #585858;
+	color: #FFFFFF; 
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+}
