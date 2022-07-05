@@ -1,10 +1,158 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale =1.0">
-	<title>beomsu</title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale =1.0">
+		<title>입사지원서</title>
+		
+		<link rel="stylesheet" href="./css/style.css">
+		
+	</head>
 	<body>
+		<div>
+			<h2 style= "text-align: center; color: #585858">입사지원서 수정</h2>			
+			<table>				
+				<tr>
+					<th>지원분야</th>
+					<td><input type="text" id="jobType" value="시스템엔지니어"></td>
+					<th>경력구분</th>
+					<td>
+						<select id="selcareer">
+								<option value="0">경력
+								<option value="1" selected>신입
+						</select>
+					</td>
+					<th>희망연봉</th>
+					<td><input type="text" id="money" value="회사내규에따름"></td>
+				</tr>
+			</table>		
+			<h4>□ 기본정보</h4>
+			<table>
+				<tr>
+					<td rowspan="6" style="width: 250px; height: 250px; padding: 0px;">
+						<image src="./image/rdj2.gif" width="100%" height="100%">
+						<input type="file">										
+					</td>
+					<th>성명</th>
+					<td><input type="text" id="name_kr" value="황로다주"></td>
+					<th>한문</th>
+					<td><input type="text" id="name_ch" value="黃勞多週"></td>		
+				</tr>		
+				<tr>
+					<th>영문</th>
+					<td><input type="text" id="name_en" value="Robert John Downey Jr."></td>
+					<th>생년월일</th>
+					<td><input type="date" id="birthday" value="1965.04.04"></td>
+				</tr>
+				<tr>
+					<th>전화번호</th>
+					<td><input type="text" id="tel1" value="010-8253-8253"></td>
+					<th>비상연락망</th>
+					<td><input type="text" id="tel2" value="010-8253-1253"></td>
+				</tr>
+				<tr>
+					<th>전자우편</th>
+					<td><input type="text" id="email" value="1ronman@gmail.com"></td>
+					<th>나이</th>
+					<td><input type="number" id="age" value="57"></td>
+				</tr>
+				<tr>
+					<th>주소</th>
+					<td colspan ="3" align="center"><input type="text" id="address" value="강원 양양군 손양면 선사유적로 316-54"></td>
+				</tr>
+				<tr>
+					<th>취미생활</th>
+					<td colspan ="3"><input type="text" id="hoby" value="레고 조립"></td>
+				</tr>		
+			</table>
+			<h4>□ 학력사항 (최신이력이 가장 위로)</h4>	
+			<table>
+				<tr >
+					<th>기간</th>
+					<th style="width:50px;">출신학교</th>
+					<th style="width:30px;">구분</th>
+					<th style="width:60px;">학과</th>
+					<th style="width:50px;">소재지</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="date" id="school_start_date" class="input-date" value="2014-03-01">&nbsp;-
+						<input type="date" id="school_end_date"  class="input-date" value="2019-02-05">
+					</td>
+					<td><input type="text" id="school_name" value="서울대학교"></td>
+					<td>
+						<select id="schooltype"  value="졸업">
+							<option value="0">재학
+							<option value="1">휴학
+							<option value="2">중퇴
+							<option value="3" selected>졸업
+						</select>
+					</td>
+					<td><input type="text" id="major" value="항공우주공학과"></td>
+					<td><input type="text" id="location" value="서울"></td>
+				</tr>
+			</table>
+			<h4>□ 교육연수</h4>		
+			<table>						
+				<tr >
+					<th>연수기간</th>
+					<th>연수기관</th>
+					<th>연수과정 및 내용</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="date" id="edu_start_date" class="input-date" value="2019-05-03">&nbsp;-
+						<input type="date" id="edu_end_date" class="input-date" value="2020-01-18">
+					</td>
+					<td><input type="text" id="edu_name" value="대한예수교장로회사랑의교회"></td>
+					<td><input type="text" id="edu_memo" value="Summer Season Education"></td>
+				</tr>
+			</table>
+			<h4>□ 자격사항</h4>
+			<table>
+				<tr >
+					<th>취득일</th>
+					<th>종류 및 등급</th>
+					<th>발행처</th>
+					<th>보유기술 및 수준</th>
+				</tr>
+				<tr>
+					<td><input type="date" id="certi_date" value="2021-05-05"></td>
+					<td><input type="text" id="certi_name" value="항공기 정비사 23급"</td>
+					<td><input type="text" id="certi_madeby" value="국제 레고협회"</td>
+					<td><input type="text" id="certi_memo" value="수준높음"</td>
+				</tr>
+			</table>
+			<h4>□ 경력사항(4대 보험 가입 경력)</h4>
+			<table>	
+				<tr>
+					<th>활동기간</th>
+					<th style="width:50px;">기관</th>
+					<th style="width:50px;">담당업무</th>
+					<th style="width:50px;">경험 및 습득역량</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="date" id="company_start_date" class="input-date" value="2015-02-02">&nbsp;-
+						<input type="date" id="company_end_date" class="input-date" value="2021-02-22">
+					</td>
+					<td><input type="text" id="company_name" value="어벤져스"</td>
+					<td><input type="text" id="company_major" value="설거지"</td>
+					<td><input type="text" id="company_memo" value="보라색 외계인과 혈투"</td>						
+				</tr>
+			</table>
+			<button type="button" class="mybutton" onclick="Back();">이전</button>
+			<button type="button" class="mybutton" style="float: right;" onclick="Save();">저장하기</button>
+		</div>
 	</body>
+	<script type="text/javascript">
+	function Save(){		
+		location.href="recruitList.html";
+	}	
+	function Back(){		
+		answer = confirm("지금까지 작성한 내용들이 저장되지 않습니다.\n이전페이지로 돌아가시려면 \"예\"를 선택해주세요.")
+		if(answer)
+			location.href="recruitView.html";		
+	}		
+	</script>	
 </html>

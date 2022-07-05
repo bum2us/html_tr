@@ -1,0 +1,35 @@
+ div {
+	width: 900px;
+	margin: 0px, 0px, 0px, 450px;
+}
+
+table, th, td {
+	border: solid;
+	border-width: 1px;
+	border-color: #e6e6e6;
+	border-collapse: collapse;
+}
+
+table {
+	width: 900px;
+}
+
+th, td {
+	padding: 10px;	
+	text-align: center;		
+	font-size: 9pt;
+}
+
+th {
+	color: #FFFFFF;	
+	background: #585858;
+	width: 120px;
+}
+
+.mybutton {
+	background-color: #585858;
+	color: #FFFFFF; 
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+}

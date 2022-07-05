@@ -16,6 +16,7 @@
 			<hr>
 			<table align = "center">
 				<tr>
+					<th>✔</th>
 					<th>No.</th>					
 					<th>이름</th>
 					<th>나이</th>
@@ -26,6 +27,7 @@
  					<th>합격여부</th>											
 				</tr>
 				<tr>
+					<td><input type="checkbox"></td>
 					<td>1</td>
 					<td><a href="01_result.html">신범수</a></td>
 					<td>28</td>
@@ -36,6 +38,7 @@
 					<td>합격</td>
 				</tr>
 				<tr>
+					<td><input type="checkbox"></td>
 					<td>2</td>
 					<td><a href="01_result.html">홍길동</a></td>
 					<td>24</td>
@@ -46,6 +49,7 @@
 					<td>합격</td>
 				</tr>
 				<tr>
+					<td><input type="checkbox"></td>
 					<td>3</td>
 					<td><a href="01_result.html">장원영</a></td>
 					<td>18</td>
@@ -56,8 +60,9 @@
 					<td>합격</td>
 				</tr>
 				<tr>
+					<td><input type="checkbox"></td>
 					<td>4</td>
-					<td><a href="01_result.html">황로다주</a></td>
+					<td><a href="recruitView.html">황로다주</a></td>
 					<td>57</td>
 					<td>남</td>					
 					<td>강원</td>
@@ -66,6 +71,7 @@
 					<td>불합격</td>
 				</tr>
 				<tr>
+					<td><input type="checkbox"></td>
 					<td>5</td>
 					<td><a href="01_result.html">박톰크루즈</a></td>
 					<td>60</td>
@@ -77,12 +83,17 @@
 				</tr>
 			</table>
 			<hr>					
-			<button type="button" class="mybutton" style="float: right;" onclick="CreateNew();">신규 등록</button>
+			<button type="button" class="mybutton" style="float: right; margin: 0px 2px 0px 0px;" onclick="CreateNew();">신규 등록</button>
+			<button type="button" class="mybutton" style="float: right; margin: 0px 2px 0px 0px;" onclick="DeleteItem();">삭제</button>			
 		</div>
 	</body>	
 	<script type="text/javascript">
 	function CreateNew(){		
 		location.href="recruitRegForm.html";
+	}	
+	function DeleteItem(){		
+		answer = confirm("정말로 선택한 데이터를 지우시겠습니까?")
+		if(answer) alert("구현중입니다.")
 	}		
 	</script>	
 </html>

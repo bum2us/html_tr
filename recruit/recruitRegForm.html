@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale =1.0">
 		<title>입사지원서</title>
 		
-		<link rel="stylesheet" href="./css/style_reg.css">
+		<link rel="stylesheet" href="./css/style.css">
 		
 	</head>
 	<body>
@@ -145,6 +145,7 @@
 						<td><input type="text" id="company_memo"</td>						
 					</tr>
 				</table>
+				<button type="button" class="mybutton" onclick="Back();">목록</button>
 				<button type="button" class="mybutton" style="float: right;" onclick="Save();">저장하기</button>
 			</form>
 		</div>
@@ -152,6 +153,11 @@
 	<script type="text/javascript">
 	function Save(){		
 		location.href="recruitList.html";
+	}	
+	function Back(){		
+		answer = confirm("지금까지 작성한 내용들이 저장되지 않습니다.\n목록으로 돌아가시려면 \"예\"를 선택해주세요.")
+		if(answer)
+			location.href="recruitList.html";		
 	}		
 	</script>	
 </html>
