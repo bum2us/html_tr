@@ -8,9 +8,9 @@
 		<link rel="stylesheet" href="./css/style.css">
 		
 	</head>
-	<body>
+	<body style="background-image: url(./image/bg.png);">
 		<div>
-			<h2 style= "text-align: center; color: #585858">입사지원서 수정</h2>			
+			<h2>입사지원서 수정</h2>			
 			<table>				
 				<tr>
 					<th>지원분야</th>
@@ -18,15 +18,15 @@
 					<th>경력구분</th>
 					<td>
 						<select id="selcareer">
-								<option value="0">경력
-								<option value="1" selected>신입
+								<option value="0" class="myoption">경력
+								<option value="1" class="myoption" selected>신입
 						</select>
 					</td>
 					<th>희망연봉</th>
 					<td><input type="text" id="money" value="회사내규에따름"></td>
 				</tr>
 			</table>		
-			<h4>□ 기본정보</h4>
+			<h4>■ 기본정보</h4>
 			<table>
 				<tr>
 					<td rowspan="6" style="width: 250px; height: 250px; padding: 0px;">
@@ -65,7 +65,7 @@
 					<td colspan ="3"><input type="text" id="hoby" value="레고 조립"></td>
 				</tr>		
 			</table>
-			<h4>□ 학력사항 (최신이력이 가장 위로)</h4>	
+			<h4>■ 학력사항 (최신이력이 가장 위로)</h4>	
 			<table>
 				<tr >
 					<th>기간</th>
@@ -82,17 +82,17 @@
 					<td><input type="text" id="school_name" value="서울대학교"></td>
 					<td>
 						<select id="schooltype"  value="졸업">
-							<option value="0">재학
-							<option value="1">휴학
-							<option value="2">중퇴
-							<option value="3" selected>졸업
+							<option value="0" class="myoption">재학
+							<option value="1" class="myoption">휴학
+							<option value="2" class="myoption">중퇴
+							<option value="3" class="myoption" selected>졸업
 						</select>
 					</td>
 					<td><input type="text" id="major" value="항공우주공학과"></td>
 					<td><input type="text" id="location" value="서울"></td>
 				</tr>
 			</table>
-			<h4>□ 교육연수</h4>		
+			<h4>■ 교육연수</h4>		
 			<table>						
 				<tr >
 					<th>연수기간</th>
@@ -108,7 +108,7 @@
 					<td><input type="text" id="edu_memo" value="Summer Season Education"></td>
 				</tr>
 			</table>
-			<h4>□ 자격사항</h4>
+			<h4>■ 자격사항</h4>
 			<table>
 				<tr >
 					<th>취득일</th>
@@ -123,7 +123,7 @@
 					<td><input type="text" id="certi_memo" value="수준높음"</td>
 				</tr>
 			</table>
-			<h4>□ 경력사항(4대 보험 가입 경력)</h4>
+			<h4>■ 경력사항(4대 보험 가입 경력)</h4>
 			<table>	
 				<tr>
 					<th>활동기간</th>

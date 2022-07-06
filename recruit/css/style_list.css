@@ -1,6 +1,6 @@
 div {
 	width: 900px;
-	margin: 0px 0px 0px 450px;
+	margin: 0px 0px 0px 510px;
 }
 		
 table {
@@ -19,6 +19,7 @@ th, td {
 	padding: 10px;
 	border: 1px, solid, #000000;
 	text-align: center;	
+	color: #ffffff;
 }
 .td-email {
 	text-align: left;
@@ -29,4 +30,14 @@ th, td {
 	border: none;
 	cursor: pointer;
 	text-decoration: none;
+}
+
+a {
+	text-decoration-line: none;
+	color: #ffffff;
+}
+
+h2 {
+	text-align: center; 
+	color: #ffffff;
 }

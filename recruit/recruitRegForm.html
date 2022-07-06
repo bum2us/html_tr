@@ -8,9 +8,9 @@
 		<link rel="stylesheet" href="./css/style.css">
 		
 	</head>
-	<body>
+	<body style="background-image: url(./image/bg.png);">
 		<div>
-			<h2 style= "text-align: center; color: #585858">신규 입사지원서 작성</h2>
+			<h2>신규 입사지원서 작성</h2>
 			<form action="" id="form">			
 				<table>				
 					<tr>
@@ -18,24 +18,24 @@
 						<td><input type="text" id="jobType"></td>
 						<th>경력구분</th>
 						<td>
-							<select id="selcareer">
-								<option value="0">경력
-								<option value="1">신입
+							<select id="selcareer" background-color= "transparent">
+								<option value="0" class="myoption">경력
+								<option value="1" class="myoption">신입
 							</select>
 						</td>
 						<th>희망연봉</th>
 						<td><input type="text" id="money"></td>
 					</tr>
 				</table>		
-				<h4>□ 기본정보</h4>
+				<h4>■ 기본정보</h4>
 				<table>
 					<tr>
-						<td rowspan="6" style=color:red>
+						<td rowspan="6" style=color:blue>
 							<i>정장 차림의 증명사진<br>
 							넣으시면<br><u>
 							됩니다 단축키</u><br>
 							ctrl + N + I</i><br>
-							<input type="image" id="picture" value="이미지첨부">
+							<input type="image" id="picture" value="이미지첨부" color= blue;>
 						</td>
 						<th>성명</th>
 						<td><input type="text" id="name_kr"></td>
@@ -69,7 +69,7 @@
 						<td colspan ="3"><input type="text" id="hoby"></td>
 					</tr>		
 				</table>
-				<h4>□ 학력사항 (최신이력이 가장 위로)</h4>	
+				<h4>■ 학력사항 (최신이력이 가장 위로)</h4>	
 				<table>
 					<tr >
 						<th>기간</th>
@@ -86,17 +86,17 @@
 						<td><input type="text" id="school_name"></td>
 						<td>
 							<select id="schooltype">
-								<option value="0">재학
-								<option value="1">휴학
-								<option value="2">중퇴
-								<option value="3">졸업
+								<option value="0" class="myoption">재학
+								<option value="1" class="myoption">휴학
+								<option value="2" class="myoption">중퇴
+								<option value="3" class="myoption">졸업
 							</select>
 						</td>
 						<td><input type="text" id="major"></td>
 						<td><input type="text" id="location"></td>
 					</tr>
 				</table>
-				<h4>□ 교육연수</h4>		
+				<h4>■ 교육연수</h4>		
 				<table>						
 					<tr >
 						<th>연수기간</th>
@@ -112,7 +112,7 @@
 						<td><input type="text" id="edu_memo"></td>
 					</tr>
 				</table>
-				<h4>□ 자격사항</h4>
+				<h4>■ 자격사항</h4>
 				<table>
 					<tr >
 						<th>취득일</th>
@@ -127,7 +127,7 @@
 						<td><input type="text" id="certi_memo"</td>
 					</tr>
 				</table>
-				<h4>□ 경력사항(4대 보험 가입 경력)</h4>
+				<h4>■ 경력사항(4대 보험 가입 경력)</h4>
 				<table>	
 					<tr>
 						<th>활동기간</th>
@@ -155,7 +155,7 @@
 		location.href="recruitList.html";
 	}	
 	function Back(){		
-		answer = confirm("지금까지 작성한 내용들이 저장되지 않습니다.\n목록으로 돌아가시려면 \"예\"를 선택해주세요.")
+		answer = confirm("지금까지 작성한 내용들이 저장되지 않습니다.\n목록으로 돌아가시려면 \"예\"를 선택해주세요.");
 		if(answer)
 			location.href="recruitList.html";		
 	}		

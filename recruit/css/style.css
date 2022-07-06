@@ -1,12 +1,12 @@
 div {
 	width: 900px;
-	margin: 0px 0px 0px 450px;
+	margin: 0px 0px 0px 510px;
 }
 table, th, td{
 	border-collapse: collapse;
 	border: solid;
 	border-width: 1px;
-	border-color: #E6E6E6;
+	border-color: #585858;
 }
 
 table {
@@ -21,8 +21,9 @@ th {
 }
 
 td{
+	color: #FFFFFF;
 	text-align: center;
-	border-width: 0px;
+	border-width: 1px;
 }
 
 input {
@@ -33,6 +34,8 @@ input {
 	border-left:0px;
 	border-bottom:0px;
 	text-align:center;
+	background-color: transparent;
+	color: #ffffff;
 }
 
 .input-date {
@@ -47,4 +50,28 @@ input {
 	text-decoration: none;
 	text-align: center;
 	margin: 10px 0px 0px 0px;
+}
+
+h2 {
+	text-align: center; 
+	color: #ffffff;
+}
+
+h4 {	 
+	color: #ffffff;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  
+  color: #ffffff;
+  background-color: transparent;
+  
+  border: 0px;
+}
+
+.myoption {
+	color: #000000;
 }
